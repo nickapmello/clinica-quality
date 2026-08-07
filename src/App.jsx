@@ -38,10 +38,10 @@ export default function App() {
   // States for Typewriter (Card 2)
   const [telemetryText, setTelemetryText] = useState('');
   const telemetryMessages = [
-    "[09:14] Avaliação Biomecânica concluída...",
-    "[09:15] Tensão muscular reduzida em 87% com Liberação Miofascial",
-    "[09:16] Estabilização segmentar ativada no Pilates Clínico",
-    "[09:17] Paciente sem dor: Amplitude de movimento 100% restaurada"
+    "Avaliação funcional minuciosa realizada com foco na sua dor...",
+    "Alívio muscular profundo e melhora imediata da mobilidade...",
+    "Estabilização da coluna e fortalecimento com Pilates Clínico...",
+    "Recuperação da autonomia e retorno seguro às suas atividades..."
   ];
   const [msgIdx, setMsgIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
@@ -224,7 +224,7 @@ export default function App() {
           <nav className={`hidden md:flex items-center gap-8 text-sm font-medium ${navScrolled ? 'text-[#0B3D66]' : 'text-white/90'}`}>
             <a href="#modalidades" className="hover:text-[#1769AA] transition-colors">Modalidades</a>
             <a href="#filosofia" className="hover:text-[#1769AA] transition-colors">Filosofia</a>
-            <a href="#protocolo" className="hover:text-[#1769AA] transition-colors">Protocolo</a>
+            <a href="#protocolo" className="hover:text-[#1769AA] transition-colors">Tratamentos</a>
             <a href="#avaliacoes" className="hover:text-[#1769AA] transition-colors">Depoimentos</a>
             <a href="#contato" className="hover:text-[#1769AA] transition-colors">Localização</a>
           </nav>
@@ -254,7 +254,7 @@ export default function App() {
           <div className="md:hidden mt-3 p-6 rounded-3xl bg-[#0B3D66] text-white border border-white/10 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-4">
             <a href="#modalidades" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Modalidades</a>
             <a href="#filosofia" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Filosofia</a>
-            <a href="#protocolo" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Protocolo</a>
+            <a href="#protocolo" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Tratamentos</a>
             <a href="#avaliacoes" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Depoimentos</a>
             <a href="#contato" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Localização</a>
             <a 
@@ -356,10 +356,10 @@ export default function App() {
       <section id="modalidades" className="py-24 px-6 md:px-16 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="px-4 py-1.5 rounded-full bg-[#0B3D66]/10 text-[#0B3D66] font-mono-data text-xs uppercase font-semibold tracking-wider">
-            Tecnologia & Artefatos de Tratamento
+            Especialidades & Tratamentos
           </span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[#17212B] mt-4 mb-4">
-            Abordagem Tridimensional do Movimento
+            Tratamentos Especializados para sua Saúde
           </h2>
           <p className="text-base md:text-lg text-[#17212B]/70">
             Combinamos fisioterapia manual, liberação miofascial e estabilização postural no mesmo espaço.
@@ -369,7 +369,7 @@ export default function App() {
         {/* 3 Interactive Feature Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
-          {/* Card 1 — Diagnostic Shuffler */}
+          {/* Card 1 — Fisioterapia Ortopédica & Manual */}
           <div className="bg-white border border-[#0B3D66]/15 rounded-[2.5rem] p-8 shadow-xl shadow-[#0B3D66]/5 flex flex-col justify-between hover:border-[#1769AA]/40 transition-all group">
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -377,7 +377,7 @@ export default function App() {
                   <img src={qualityLogo} alt="Quality Logo" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-xs font-mono-data bg-[#1769AA]/10 text-[#1769AA] font-semibold px-3 py-1 rounded-full">
-                  Card 01 • Dynamic Shuffler
+                  Fisioterapia Ortopédica & Manual
                 </span>
               </div>
 
@@ -414,12 +414,12 @@ export default function App() {
             </div>
 
             <div className="pt-6 border-t border-[#0B3D66]/10 flex items-center justify-between text-xs font-mono-data text-[#0B3D66]">
-              <span>[ Módulo Ortopédico ]</span>
-              <span className="text-[#1769AA] font-bold">Alternando auto →</span>
+              <span>[ Fisioterapia Especializada ]</span>
+              <span className="text-[#1769AA] font-bold">Ver mais especialidades →</span>
             </div>
           </div>
 
-          {/* Card 2 — Telemetry Typewriter */}
+          {/* Card 2 — Liberação Miofascial & Alívio */}
           <div className="bg-[#0B3D66] text-white border border-white/15 rounded-[2.5rem] p-8 shadow-2xl flex flex-col justify-between hover:border-[#1769AA]/50 transition-all group">
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -428,7 +428,7 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-2 text-xs font-mono-data bg-sky-400/20 text-sky-300 px-3 py-1 rounded-full border border-sky-400/30">
                   <span className="w-2 h-2 rounded-full bg-sky-300 animate-ping" />
-                  <span>Live Feed</span>
+                  <span>Resultados Reais</span>
                 </div>
               </div>
 
@@ -437,11 +437,11 @@ export default function App() {
                 Técnicas manuais e instrumentais avançadas para desarmar pontos de gatilho e fascias rígidas.
               </p>
 
-              {/* Typewriter Terminal Display */}
+              {/* Typewriter Display — Clinical Evolution */}
               <div className="bg-[#06243E] rounded-2xl p-5 border border-white/10 font-mono-data text-xs text-sky-300 min-h-[140px] flex flex-col justify-between relative overflow-hidden">
                 <div className="text-[10px] text-white/40 border-b border-white/10 pb-2 mb-2 flex justify-between">
-                  <span>TELEMETRIA DE MOBILIDADE</span>
-                  <span>SISTEMA ATIVO</span>
+                  <span>EVOLUÇÃO DOS PACIENTES</span>
+                  <span>ATENDIMENTO CONTÍNUO</span>
                 </div>
                 <div className="flex-1">
                   <p className="leading-relaxed text-sky-200">
@@ -457,12 +457,12 @@ export default function App() {
             </div>
 
             <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono-data text-white/60">
-              <span>[ Telemetria de Mobilidade ]</span>
-              <span className="text-sky-300">100% Calibrado</span>
+              <span>[ Reabilitação e Mobilidade ]</span>
+              <span className="text-sky-300">Acompanhamento Individual</span>
             </div>
           </div>
 
-          {/* Card 3 — Cursor Protocol Scheduler */}
+          {/* Card 3 — Pilates Clínico & Estabilização */}
           <div className="bg-white border border-[#0B3D66]/15 rounded-[2.5rem] p-8 shadow-xl shadow-[#0B3D66]/5 flex flex-col justify-between hover:border-[#1769AA]/40 transition-all group">
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -470,7 +470,7 @@ export default function App() {
                   <Calendar className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-mono-data bg-[#0B3D66]/10 text-[#0B3D66] font-semibold px-3 py-1 rounded-full">
-                  Card 03 • Scheduler
+                  Horários Flexíveis
                 </span>
               </div>
 
@@ -479,10 +479,10 @@ export default function App() {
                 Agendamento de sessões individuais ou em pequenos grupos guiados por fisioterapeutas.
               </p>
 
-              {/* Scheduler UI Simulation */}
+              {/* Scheduler UI */}
               <div className="relative bg-[#F7FAFC] rounded-2xl p-5 border border-[#0B3D66]/10 shadow-inner min-h-[140px]">
                 <span className="block text-[11px] font-mono-data text-[#17212B]/50 mb-3 uppercase tracking-wider">
-                  GRADE SEMANAL DE REABILITAÇÃO
+                  HORÁRIOS DE ATENDIMENTO E PILATES
                 </span>
                 <div className="grid grid-cols-5 gap-2 mb-4">
                   {['MON', 'TUE', 'WED', 'THU', 'FRI'].map((day) => {
@@ -522,8 +522,8 @@ export default function App() {
             </div>
 
             <div className="pt-6 border-t border-[#0B3D66]/10 flex items-center justify-between text-xs font-mono-data text-[#0B3D66]">
-              <span>[ Grade do Pilates ]</span>
-              <span className="text-[#1769AA] font-bold">Interação Simulada</span>
+              <span>[ Pilates e Reabilitação ]</span>
+              <span className="text-[#1769AA] font-bold">Agendamento Personalizado</span>
             </div>
           </div>
 
@@ -583,10 +583,10 @@ export default function App() {
       <section id="protocolo" ref={protocolRef} className="py-24 px-6 md:px-16 max-w-6xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="px-4 py-1.5 rounded-full bg-[#0B3D66]/10 text-[#0B3D66] font-mono-data text-xs uppercase font-semibold tracking-wider">
-            Metodologia em 3 Fases
+            Etapas do seu Tratamento
           </span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[#17212B] mt-4 mb-4">
-            Nosso Protocolo de Reabilitação
+            Nosso Processo de Cuidado e Reabilitação
           </h2>
           <p className="text-base md:text-lg text-[#17212B]/70">
             Conheça o processo passo a passo para sair do estado de dor para o movimento livre.
@@ -600,7 +600,7 @@ export default function App() {
           <div className="sticky-card sticky top-28 bg-[#0B3D66] text-white p-8 md:p-14 rounded-[3rem] shadow-2xl border border-white/10 flex flex-col md:flex-row justify-between items-center gap-10">
             <div className="flex-1">
               <span className="text-xs font-mono-data text-sky-300 font-bold tracking-widest uppercase block mb-2">
-                FASE 01 / INVESTIGAÇÃO
+                ETAPA 01 / INVESTIGAÇÃO
               </span>
               <h3 className="text-2xl md:text-4xl font-bold mb-4">Diagnóstico Biomecânico Integrado</h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed mb-6">
@@ -619,7 +619,7 @@ export default function App() {
                 <circle cx="50" cy="50" r="30" fill="none" stroke="#FFFFFF" strokeWidth="1.5" strokeDasharray="4 4" />
                 <circle cx="50" cy="50" r="15" fill="none" stroke="#1769AA" strokeWidth="2" />
               </svg>
-              <span className="absolute font-mono-data text-[10px] text-white/50 bottom-2">FASE 01</span>
+              <span className="absolute font-mono-data text-[10px] text-white/50 bottom-2">ETAPA 01</span>
             </div>
           </div>
 
@@ -627,7 +627,7 @@ export default function App() {
           <div className="sticky-card sticky top-32 bg-[#06243E] text-white p-8 md:p-14 rounded-[3rem] shadow-2xl border border-white/10 flex flex-col md:flex-row justify-between items-center gap-10">
             <div className="flex-1">
               <span className="text-xs font-mono-data text-sky-300 font-bold tracking-widest uppercase block mb-2">
-                FASE 02 / TRATAMENTO MANUAL
+                ETAPA 02 / TRATAMENTO MANUAL
               </span>
               <h3 className="text-2xl md:text-4xl font-bold mb-4">Liberação Miofascial & RPG</h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed mb-6">
@@ -647,7 +647,7 @@ export default function App() {
                 ))}
               </div>
               <div className="absolute w-full h-1 bg-[#1769AA] shadow-[0_0_15px_#1769AA] animate-[ping_3s_ease-in-out_infinite]" />
-              <span className="absolute font-mono-data text-[10px] text-white/50 bottom-2">SCANNER MIOFASCIAL</span>
+              <span className="absolute font-mono-data text-[10px] text-white/50 bottom-2">LIBERAÇÃO MIOFASCIAL</span>
             </div>
           </div>
 
@@ -655,7 +655,7 @@ export default function App() {
           <div className="sticky-card sticky top-36 bg-[#0B3D66] text-white p-8 md:p-14 rounded-[3rem] shadow-2xl border border-white/10 flex flex-col md:flex-row justify-between items-center gap-10">
             <div className="flex-1">
               <span className="text-xs font-mono-data text-sky-300 font-bold tracking-widest uppercase block mb-2">
-                FASE 03 / FORTALECIMENTO
+                ETAPA 03 / FORTALECIMENTO
               </span>
               <h3 className="text-2xl md:text-4xl font-bold mb-4">Pilates Clínico & Estabilização</h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed mb-6">
@@ -678,7 +678,7 @@ export default function App() {
                   className="animate-pulse"
                 />
               </svg>
-              <span className="absolute font-mono-data text-[10px] text-white/50 bottom-2">ESTABILIZAÇÃO ATIVA</span>
+              <span className="absolute font-mono-data text-[10px] text-white/50 bottom-2">FORTALECIMENTO DO CORE</span>
             </div>
           </div>
 
@@ -863,10 +863,10 @@ export default function App() {
               Referência em Londrina-PR em Fisioterapia Ortopédica, Liberação Miofascial, RPG, Pilates Clínico e Reabilitação do Movimento.
             </p>
 
-            {/* Operational Status Indicator */}
+            {/* Operational Schedule Indicator */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 font-mono-data text-xs text-sky-300">
               <span className="w-2.5 h-2.5 rounded-full bg-sky-300 animate-ping" />
-              <span>SISTEMA OPERACIONAL • Londrina/PR</span>
+              <span>Atendimento com horário agendado • Londrina/PR</span>
             </div>
           </div>
 
