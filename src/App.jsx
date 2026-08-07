@@ -20,6 +20,8 @@ import {
   MessageCircle
 } from 'lucide-react';
 
+import qualityLogo from './assets/quality-logo.svg';
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
@@ -196,16 +198,18 @@ export default function App() {
 
       {/* A. NAVBAR — "A ILHA FLUTUANTE" */}
       <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-6xl transition-all duration-300">
-        <div className={`flex items-center justify-between px-6 py-3.5 rounded-full transition-all duration-300 ${
+        <div className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-300 ${
           navScrolled 
             ? 'bg-[#FFFFFF]/90 backdrop-blur-xl border border-[#0B3D66]/15 shadow-xl shadow-[#0B3D66]/10' 
             : 'bg-[#0B3D66]/70 backdrop-blur-md border border-white/15 text-white'
         }`}>
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-full bg-[#1769AA] flex items-center justify-center text-white font-bold shadow-md shadow-[#1769AA]/30 transition-transform group-hover:scale-105">
-              <Activity className="w-5 h-5 stroke-[2.5]" />
-            </div>
+          {/* Logo Oficial Sem Fundo Branco */}
+          <a href="#" className="flex items-center gap-3 group">
+            <img 
+              src={qualityLogo} 
+              alt="Quality Clínica do Movimento" 
+              className="h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+            />
             <div className="flex flex-col">
               <span className={`font-bold tracking-tight text-base leading-none ${navScrolled ? 'text-[#0B3D66]' : 'text-white'}`}>
                 QUALITY
@@ -280,8 +284,9 @@ export default function App() {
 
         {/* Hero Content - Lower Third Left */}
         <div className="relative z-10 max-w-4xl mx-auto md:mx-0">
-          {/* Rating Badge */}
+          {/* Rating Badge with Logo Emblem */}
           <div className="hero-anim inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 mb-6 text-xs md:text-sm">
+            <img src={qualityLogo} alt="Quality" className="h-5 w-auto" />
             <span className="flex items-center gap-1 text-amber-400 font-bold">
               4.8 <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
             </span>
@@ -368,8 +373,8 @@ export default function App() {
           <div className="bg-white border border-[#0B3D66]/15 rounded-[2.5rem] p-8 shadow-xl shadow-[#0B3D66]/5 flex flex-col justify-between hover:border-[#1769AA]/40 transition-all group">
             <div>
               <div className="flex items-center justify-between mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-[#0B3D66] text-white flex items-center justify-center">
-                  <Activity className="w-6 h-6" />
+                <div className="w-12 h-12 rounded-2xl bg-[#0B3D66] text-white flex items-center justify-center p-2">
+                  <img src={qualityLogo} alt="Quality Logo" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-xs font-mono-data bg-[#1769AA]/10 text-[#1769AA] font-semibold px-3 py-1 rounded-full">
                   Card 01 • Dynamic Shuffler
@@ -418,7 +423,7 @@ export default function App() {
           <div className="bg-[#0B3D66] text-white border border-white/15 rounded-[2.5rem] p-8 shadow-2xl flex flex-col justify-between hover:border-[#1769AA]/50 transition-all group">
             <div>
               <div className="flex items-center justify-between mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-[#1769AA] text-white flex items-center justify-center shadow-lg shadow-[#1769AA]/30">
+                <div className="w-12 h-12 rounded-2xl bg-[#1769AA] text-white flex items-center justify-center p-2 shadow-lg shadow-[#1769AA]/30">
                   <HeartPulse className="w-6 h-6" />
                 </div>
                 <div className="flex items-center gap-2 text-xs font-mono-data bg-sky-400/20 text-sky-300 px-3 py-1 rounded-full border border-sky-400/30">
@@ -461,7 +466,7 @@ export default function App() {
           <div className="bg-white border border-[#0B3D66]/15 rounded-[2.5rem] p-8 shadow-xl shadow-[#0B3D66]/5 flex flex-col justify-between hover:border-[#1769AA]/40 transition-all group">
             <div>
               <div className="flex items-center justify-between mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-[#0B3D66] text-white flex items-center justify-center">
+                <div className="w-12 h-12 rounded-2xl bg-[#0B3D66] text-white flex items-center justify-center p-2">
                   <Calendar className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-mono-data bg-[#0B3D66]/10 text-[#0B3D66] font-semibold px-3 py-1 rounded-full">
@@ -844,12 +849,10 @@ export default function App() {
       <footer id="contato" className="bg-[#0B3D66] text-white pt-20 pb-12 px-6 md:px-16 rounded-t-[4rem] border-t border-white/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
           
-          {/* Brand Info */}
+          {/* Brand Info com Logo Oficial Sem Fundo Branco */}
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#1769AA] flex items-center justify-center text-white font-bold">
-                <Activity className="w-6 h-6" />
-              </div>
+              <img src={qualityLogo} alt="Quality Logo" className="h-12 w-auto object-contain" />
               <div>
                 <span className="font-bold text-xl tracking-tight block leading-none">QUALITY</span>
                 <span className="text-xs text-white/60 font-mono-data">Clínica do Movimento</span>
