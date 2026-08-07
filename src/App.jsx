@@ -30,18 +30,18 @@ export default function App() {
 
   // States for Shuffler (Card 1)
   const [shufflerItems, setShufflerItems] = useState([
-    { id: 1, title: 'Fisioterapia Ortopédica', desc: 'Tratamento de hérnias de disco, coluna e pós-operatório', badge: 'Alta Eficiência' },
-    { id: 2, title: 'Liberação Miofascial', desc: 'Desativação de pontos gatilho e alívio muscular imediato', badge: 'Manual & Instrumental' },
-    { id: 3, title: 'Pilates Clínico & RPG', desc: 'Reabilitação postural, fortalecimento de core e flexibilidade', badge: 'Estabilização' },
+    { id: 1, title: 'Fisioterapia Ortopédica', desc: 'Acompanhamento focado em reabilitação de coluna e articulações', badge: 'Cuidado Dedicado' },
+    { id: 2, title: 'Liberação Miofascial', desc: 'Técnicas voltadas à redução de tensões musculares e mobilidade', badge: 'Manual & Instrumental' },
+    { id: 3, title: 'Pilates Clínico & RPG', desc: 'Reabilitação postural, fortalecimento do core e flexibilidade', badge: 'Estabilização' },
   ]);
 
-  // States for Typewriter (Card 2)
+  // States for Typewriter (Card 2) - Clinical Evolution without absolute promises
   const [telemetryText, setTelemetryText] = useState('');
   const telemetryMessages = [
-    "Avaliação funcional minuciosa realizada com foco na sua dor...",
-    "Alívio muscular profundo e melhora imediata da mobilidade...",
-    "Estabilização da coluna e fortalecimento com Pilates Clínico...",
-    "Recuperação da autonomia e retorno seguro às suas atividades..."
+    "Avaliação funcional individualizada realizada para compreender suas necessidades...",
+    "Aplicação de técnicas voltadas à redução de tensões e evolução gradual da mobilidade...",
+    "Fortalecimento progressivo e estabilização da postura com Pilates Clínico...",
+    "Estímulo à autonomia e auxílio no retorno gradual e seguro às atividades diárias..."
   ];
   const [msgIdx, setMsgIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
@@ -223,7 +223,7 @@ export default function App() {
           {/* Desktop Links */}
           <nav className={`hidden md:flex items-center gap-8 text-sm font-medium ${navScrolled ? 'text-[#0B3D66]' : 'text-white/90'}`}>
             <a href="#modalidades" className="hover:text-[#1769AA] transition-colors">Modalidades</a>
-            <a href="#filosofia" className="hover:text-[#1769AA] transition-colors">Filosofia</a>
+            <a href="#filosofia" className="hover:text-[#1769AA] transition-colors">Nossa Forma de Cuidar</a>
             <a href="#protocolo" className="hover:text-[#1769AA] transition-colors">Tratamentos</a>
             <a href="#avaliacoes" className="hover:text-[#1769AA] transition-colors">Depoimentos</a>
             <a href="#contato" className="hover:text-[#1769AA] transition-colors">Localização</a>
@@ -253,7 +253,7 @@ export default function App() {
         {mobileMenuOpen && (
           <div className="md:hidden mt-3 p-6 rounded-3xl bg-[#0B3D66] text-white border border-white/10 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-4">
             <a href="#modalidades" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Modalidades</a>
-            <a href="#filosofia" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Filosofia</a>
+            <a href="#filosofia" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Nossa Forma de Cuidar</a>
             <a href="#protocolo" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Tratamentos</a>
             <a href="#avaliacoes" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Depoimentos</a>
             <a href="#contato" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium hover:text-sky-300">Localização</a>
@@ -296,7 +296,7 @@ export default function App() {
             <span className="text-sky-200 font-mono-data text-[11px]">Centro | Londrina-PR</span>
           </div>
 
-          {/* Preset Hero Headline Pattern */}
+          {/* Headline Sem Promessas Absolutas */}
           <h1 className="hero-anim text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-6">
             <span className="block font-sans text-white">O movimento consciente é a</span>
             <span className="block font-drama text-sky-300 text-5xl md:text-7xl lg:text-8xl font-normal mt-1">
@@ -305,8 +305,8 @@ export default function App() {
           </h1>
 
           <p className="hero-anim text-base md:text-xl text-white/80 max-w-2xl font-normal mb-8 leading-relaxed">
-            Especialistas em Fisioterapia Ortopédica, Liberação Miofascial, RPG e Pilates Clínico. 
-            Elimine a dor na causa raiz com acompanhamento individualizado no centro de Londrina.
+            Fisioterapia Ortopédica, Liberação Miofascial, RPG e Pilates Clínico. 
+            Entenda a origem do desconforto e recupere seus movimentos com acompanhamento individualizado no centro de Londrina.
           </p>
 
           {/* Action Buttons */}
@@ -338,8 +338,8 @@ export default function App() {
             <span className="text-xs text-white/70">Avaliação Média no Google</span>
           </div>
           <div>
-            <span className="block text-2xl md:text-3xl font-bold text-sky-300 font-mono-data">100%</span>
-            <span className="text-xs text-white/70">Cuidado Personalizado</span>
+            <span className="block text-2xl md:text-3xl font-bold text-sky-300 font-mono-data">Fisioterapia</span>
+            <span className="text-xs text-white/70">Atendimento Personalizado</span>
           </div>
           <div>
             <span className="block text-2xl md:text-3xl font-bold text-white font-mono-data">Seg - Sex</span>
@@ -352,7 +352,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* C. FEATURES (FUNCIONALIDADES) — "ARTEFATOS FUNCIONAIS INTERATIVOS" */}
+      {/* C. FEATURES (FUNCIONALIDADES) */}
       <section id="modalidades" className="py-24 px-6 md:px-16 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="px-4 py-1.5 rounded-full bg-[#0B3D66]/10 text-[#0B3D66] font-mono-data text-xs uppercase font-semibold tracking-wider">
@@ -434,10 +434,10 @@ export default function App() {
 
               <h3 className="text-xl font-bold text-white mb-2">Liberação Miofascial & Alívio</h3>
               <p className="text-sm text-white/70 mb-6">
-                Técnicas manuais e instrumentais avançadas para desarmar pontos de gatilho e fascias rígidas.
+                Técnicas manuais e instrumentais direcionadas para alívio de tensões musculares e melhora da flexibilidade fascial.
               </p>
 
-              {/* Typewriter Display — Clinical Evolution */}
+              {/* Typewriter Display — Clinical Evolution without absolute promises */}
               <div className="bg-[#06243E] rounded-2xl p-5 border border-white/10 font-mono-data text-xs text-sky-300 min-h-[140px] flex flex-col justify-between relative overflow-hidden">
                 <div className="text-[10px] text-white/40 border-b border-white/10 pb-2 mb-2 flex justify-between">
                   <span>EVOLUÇÃO DOS PACIENTES</span>
@@ -530,7 +530,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* D. PHILOSOPHY — "O MANIFESTO" */}
+      {/* D. NOSSA FORMA DE CUIDAR (PHILOSOPHY — ABORDAGEM POSITIVA) */}
       <section id="filosofia" ref={philosophyRef} className="py-32 px-6 md:px-16 bg-[#0B3D66] text-white rounded-[3rem] my-12 relative overflow-hidden shadow-2xl border border-white/10">
         {/* Organic Texture Overlay */}
         <div className="absolute inset-0 opacity-15">
@@ -543,18 +543,18 @@ export default function App() {
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <span className="px-4 py-1.5 rounded-full bg-white/10 text-sky-300 font-mono-data text-xs uppercase font-semibold tracking-widest border border-white/15">
-            O Manifesto Quality
+            Nossa Forma de Cuidar
           </span>
 
           <div className="mt-12 space-y-8">
-            <p className="philosophy-text text-xl md:text-3xl text-white/70 font-light leading-relaxed">
-              A maioria das clínicas convencionais foca apenas em anestesiar a dor momentânea com remédios e repouso forçado.
+            <p className="philosophy-text text-xl md:text-3xl text-white/80 font-light leading-relaxed">
+              Cada pessoa possui uma história, uma rotina e necessidades diferentes.
             </p>
             
             <p className="philosophy-text text-3xl md:text-5xl lg:text-6xl font-normal leading-tight">
-              <span className="font-sans text-white">Nós focamos em:</span>{' '}
+              <span className="font-sans text-white">Na Quality,</span>{' '}
               <span className="font-drama text-sky-300 text-4xl md:text-6xl lg:text-7xl block md:inline mt-2 md:mt-0">
-                diagnosticar a causa raiz, reeducar a biomecânica e devolver a liberdade do seu movimento.
+                o atendimento começa com uma avaliação individualizada para compreender suas necessidades e definir uma estratégia de cuidado adequada para cada etapa da evolução.
               </span>
             </p>
           </div>
@@ -563,23 +563,23 @@ export default function App() {
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
               <ShieldCheck className="w-8 h-8 text-sky-300 mb-3" />
               <h4 className="font-bold text-lg text-white mb-1">Avaliação Biomecânica</h4>
-              <p className="text-xs text-white/70">Mapeamento preciso de onde o movimento está travado.</p>
+              <p className="text-xs text-white/70">Mapeamento para compreender as dinâmicas do seu movimento.</p>
             </div>
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
               <Sparkles className="w-8 h-8 text-sky-300 mb-3" />
-              <h4 className="font-bold text-lg text-white mb-1">Sem Tratamentos Genéricos</h4>
-              <p className="text-xs text-white/70">Cada sessão é 100% personalizada por fisioterapeutas.</p>
+              <h4 className="font-bold text-lg text-white mb-1">Cuidado Individualizado</h4>
+              <p className="text-xs text-white/70">Atendimento conduzido e adaptado por fisioterapeutas para cada etapa do tratamento.</p>
             </div>
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
               <Award className="w-8 h-8 text-sky-300 mb-3" />
               <h4 className="font-bold text-lg text-white mb-1">Nota 4.8 no Google</h4>
-              <p className="text-xs text-white/70">Excelência comprovada por dezenas de pacientes em Londrina.</p>
+              <p className="text-xs text-white/70">Reconhecimento e carinho demonstrados por pacientes em Londrina.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* E. PROTOCOL — "ARQUIVO FIXO DE EMPILHAMENTO (STICKY STACKING)" */}
+      {/* E. PROTOCOL — "ETAPAS DO SEU TRATAMENTO" (SEM PROMESSAS ABSOLUTAS) */}
       <section id="protocolo" ref={protocolRef} className="py-24 px-6 md:px-16 max-w-6xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="px-4 py-1.5 rounded-full bg-[#0B3D66]/10 text-[#0B3D66] font-mono-data text-xs uppercase font-semibold tracking-wider">
@@ -589,7 +589,7 @@ export default function App() {
             Nosso Processo de Cuidado e Reabilitação
           </h2>
           <p className="text-base md:text-lg text-[#17212B]/70">
-            Conheça o processo passo a passo para sair do estado de dor para o movimento livre.
+            Conheça o processo passo a passo desenhado para apoiar a recuperação da sua mobilidade.
           </p>
         </div>
 
@@ -602,9 +602,9 @@ export default function App() {
               <span className="text-xs font-mono-data text-sky-300 font-bold tracking-widest uppercase block mb-2">
                 ETAPA 01 / INVESTIGAÇÃO
               </span>
-              <h3 className="text-2xl md:text-4xl font-bold mb-4">Diagnóstico Biomecânico Integrado</h3>
+              <h3 className="text-2xl md:text-4xl font-bold mb-4">Avaliação Funcional e Postural</h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed mb-6">
-                Investigamos posturalmente e testes de mobilidade para entender por que a dor se manifestou. Mapeamos compensações musculares e articulares.
+                Realizamos testes minuciosos de mobilidade e postura para compreender os fatores que contribuem para o desconforto e mapear compensações musculares.
               </p>
               <ul className="space-y-2 text-xs font-mono-data text-white/90">
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Avaliação postural minuciosa</li>
@@ -631,11 +631,11 @@ export default function App() {
               </span>
               <h3 className="text-2xl md:text-4xl font-bold mb-4">Liberação Miofascial & RPG</h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed mb-6">
-                Intervenção direta nas restrições de fáscia e músculos encurtados. Desativamos os pontos gatilho com terapia manual e aliviamos a compressão articular.
+                Aplicação de técnicas manuais para redução de tensões em fáscias e músculos, favorecendo o reequilíbrio postural e o alívio articular.
               </p>
               <ul className="space-y-2 text-xs font-mono-data text-white/90">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Alívio de tensão profunda</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Restauração do comprimento muscular</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Terapia manual para redução de tensões</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Estímulo à flexibilidade muscular</li>
               </ul>
             </div>
 
@@ -659,11 +659,11 @@ export default function App() {
               </span>
               <h3 className="text-2xl md:text-4xl font-bold mb-4">Pilates Clínico & Estabilização</h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed mb-6">
-                Com a dor controlada, fortalecemos os músculos estabilizadores de coluna e articulações. Garantimos que a lesão não volte ao retornar às suas atividades diárias.
+                Trabalhamos fortalecimento, estabilidade e consciência corporal para favorecer um retorno mais seguro às atividades diárias.
               </p>
               <ul className="space-y-2 text-xs font-mono-data text-white/90">
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Músculos do CORE fortalecidos</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Autonomia e prevenção permanente</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Favorecimento da autonomia e estabilidade corporal</li>
               </ul>
             </div>
 
@@ -732,12 +732,12 @@ export default function App() {
             <div>
               <span className="text-xs font-mono-data text-sky-300 uppercase tracking-wider font-bold block mt-2">TRATAMENTO COMPLETO</span>
               <h3 className="text-2xl md:text-3xl font-bold mt-2 mb-3">Reabilitação & Pilates</h3>
-              <p className="text-xs text-white/80 mb-6">Acompanhamento contínuo focado na eliminação completa da dor e reestruturação da coluna.</p>
+              <p className="text-xs text-white/80 mb-6">Acompanhamento contínuo direcionado ao fortalecimento, reeducação postural e melhora da qualidade de vida.</p>
 
               <ul className="space-y-3 text-xs text-white/90 mb-8">
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Diagnóstico Biomecânico completo</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Sessões periódicas de Pilates Clínico</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Liberação miofascial contínua</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Liberação miofascial dedicada</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-sky-300" /> Suporte direto pelo WhatsApp</li>
               </ul>
             </div>
@@ -777,7 +777,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* G. DEPOIMENTOS / PROVA SOCIAL GOOGLE (4.8 ★) */}
+      {/* G. DEPOIMENTOS / PROVA SOCIAL GOOGLE (4.8 ★ REAIS) */}
       <section id="avaliacoes" className="py-24 px-6 md:px-16 bg-[#EAF4FB] rounded-[3rem] my-12 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B3D66] text-white font-mono-data text-xs mb-3">
@@ -793,7 +793,7 @@ export default function App() {
           
           <div className="bg-white p-8 rounded-3xl border border-[#0B3D66]/10 shadow-md flex flex-col justify-between">
             <p className="text-sm text-[#17212B]/80 italic mb-6 leading-relaxed">
-              "Cheguei com fortes dores na coluna lombar e mal conseguia sentar. O atendimento da Quality mudou minha vida. Em poucas sessões de liberação miofascial e pilates o alívio foi total!"
+              "Cheguei com fortes dores na coluna lombar e mal conseguia sentar. O atendimento da Quality mudou minha rotina. Em poucas sessões de liberação miofascial e pilates senti uma excelente melhora na qualidade dos movimentos e no alívio das tensões!"
             </p>
             <div className="flex items-center gap-3 pt-4 border-t border-black/5">
               <div className="w-10 h-10 rounded-full bg-[#0B3D66] text-white font-bold flex items-center justify-center text-sm">
@@ -827,7 +827,7 @@ export default function App() {
 
           <div className="bg-white p-8 rounded-3xl border border-[#0B3D66]/10 shadow-md flex flex-col justify-between">
             <p className="text-sm text-[#17212B]/80 italic mb-6 leading-relaxed">
-              "Recomendo de olhos fechados. Fiz minha reabilitação pós-cirúrgica aqui e a atenção da equipe da Rua Santos é impecável. Sem dores e com mobilidade 100%!"
+              "Recomendo de olhos fechados. Fiz minha reabilitação pós-cirúrgica aqui e a atenção da equipe da Rua Santos é impecável. Senti um excelente avanço na minha reabilitação e recuperei muito da minha mobilidade!"
             </p>
             <div className="flex items-center gap-3 pt-4 border-t border-black/5">
               <div className="w-10 h-10 rounded-full bg-[#0B3D66] text-white font-bold flex items-center justify-center text-sm">
