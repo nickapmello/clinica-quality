@@ -16,12 +16,11 @@ Link Local de Desenvolvimento: http://127.0.0.1:5173/
 
 ---
 
-## 🩺 Comunicação Ética & Profissional (Sem Promessas Absolutas)
-- **Ajustado:** Removidas todas as promessas de resultado clínico absoluto, percentuais sem fonte e comparações negativas com outras clínicas.
-- **Hero:** *"Entenda a origem do desconforto e recupere seus movimentos com acompanhamento individualizado no centro de Londrina."*
-- **Evolução:** *"Aplicação de técnicas voltadas à redução de tensões e evolução gradual da mobilidade..."*
-- **Nossa Forma de Cuidar:** *"Cada pessoa possui uma história, uma rotina e necessidades diferentes. Na Quality, o atendimento começa com uma avaliação individualizada..."*
-- **Protocolo:** *"Trabalhamos fortalecimento, estabilidade e consciência corporal para favorecer um retorno mais seguro às atividades diárias."*
+## 🩺 Pente-Fino de Copy Final
+- **Hero Title:** *"Movimento é qualidade de vida."*
+- **Selo Liberação Miofascial:** *"Evolução do Tratamento"*
+- **Prevenção:** *"contribuir para a prevenção de lesões e manutenção da mobilidade."*
+- **Avaliações Padronizadas:** *"Avaliação funcional individualizada"* e *"Avaliação biomecânica"*.
 
 ---
 
@@ -32,6 +31,7 @@ Link Local de Desenvolvimento: http://127.0.0.1:5173/
 - [x] Aplicação da Logo Oficial sem fundo branco no Header, Hero, Cards e Footer
 - [x] Eliminação de termos de TI/Software
 - [x] Revisão ética completa da copy (sem garantias ou promessas absolutas)
+- [x] Pente-fino nos 4 pontos específicos de copy
 - [x] Fontes: Plus Jakarta Sans, Cormorant Garamond, IBM Plex Mono
 - [x] Estética 1:1 Pixel Perfect com filtro de ruído SVG `<feTurbulence>`
 - [x] Ilha Flutuante (Navbar glassmorphism)
