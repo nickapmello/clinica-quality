@@ -16,15 +16,21 @@ Link Local de Desenvolvimento: http://127.0.0.1:5173/
 
 ---
 
+## 🩺 Linguagem & Comunicação Clínica Humana
+- **Removido:** Todos os jargões e termos de tecnologia/software (`Dynamic Shuffler`, `Live Feed`, `Telemetria`, `Sistema Operacional`, `Scanner Miofascial`, `Interação Simulada`).
+- **Aplicado:** Linguagem acolhedora, humana e focada na saúde do paciente (`Fisioterapia Ortopédica & Manual`, `Resultados Reais`, `Evolução dos Pacientes`, `Acompanhamento Individualizado`, `Atendimento com horário agendado • Londrina/PR`).
+
+---
+
 ## 📌 Checklist do Projeto
 - [x] Conexão com o repositório GitHub (`nickapmello/clinica-quality.git`)
 - [x] Deploy automático configurado na Vercel
 - [x] Substituição completa da paleta antiga (Verde/Terracota/Bege) para Azul e Branco oficial
-- [x] Ajuste de contraste em todo o Header, Hero, Cards, Modalidades, Protocolo, Preços e Rodapé
+- [x] Aplicação da Logo Oficial sem fundo branco no Header, Hero, Cards e Footer
+- [x] Revisão total de linguagem humana e eliminação de termos de TI/Software
 - [x] Fontes: Plus Jakarta Sans, Cormorant Garamond, IBM Plex Mono
 - [x] Estética 1:1 Pixel Perfect com filtro de ruído SVG `<feTurbulence>`
 - [x] Ilha Flutuante (Navbar glassmorphism)
-- [x] Artefatos Funcionais Interativos (Shuffler, Typewriter, Scheduler)
 - [x] Manifesto & Protocolo 3D Sticky Stacking
 - [x] Informações completas de Londrina (Rua Santos, 662 - Centro, WhatsApp)
 - [x] Auto-commit e push para a Vercel
